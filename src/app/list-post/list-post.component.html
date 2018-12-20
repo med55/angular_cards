@@ -1,0 +1,11 @@
+<p>
+    <a href="#" (click)="expandAll()">Expand ALL..</a>
+</p>
+<p>
+    <a href="#" (click)="toggleAll()">Add Favorie all..</a>
+</p>
+
+<div>
+    <app-post *ngFor="let c of cards[currentPage]" [card]="c" #child></app-post>
+    <app-pagination [nbPage]="cards.length" (pageClick)="updatePage($event)"></app-pagination>
+</div>

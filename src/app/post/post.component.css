@@ -1,0 +1,9 @@
+.btn-med{
+    font-weight: 900;
+}
+:host{
+    margin: 20px;
+}
+.fav{
+    background-color: rgba(165, 42, 42, 0.151);
+}
